@@ -13,13 +13,11 @@ exports.sendMail = (req, res) => {
                 console.error(err);
                 return;
             }
-            //console.log(data);
 
             const mess= `
             <h4>Dear ${Username},</h4>
             ${data}
             `
-            //console.log(mess);
 
             sendEmail(
                 susEmail,
